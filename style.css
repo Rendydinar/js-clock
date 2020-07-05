@@ -5,11 +5,14 @@
 }
 
 body {
+	background: #091921;
+}
+
+.clock-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background: #091921;
 }
 
 .clock {
@@ -54,12 +57,12 @@ body {
 	height: 190px;
 }
 
-.clock .sec, .sc {
+.clock .sec, #sc {
 	width: 230px;
 	height: 230px;
 }
 
-.hr, .mn, .sc {
+.hr, .mn, #sc {
 	display: flex;
 	justify-content: center;
 	/*align-items: center;*/
@@ -82,22 +85,41 @@ body {
 	position: absolute;
 	width: 4px;
 	height: 90px;
-	background: #fff;
+	background: #e53e3e;
 	z-index: 11;
 	border-radius: 6px 6px 0 0;
 }
 
-.sc:before {
+#sc:before {
 	content: '';
 	position: absolute;
 	width: 2px;
 	height: 150px;
-	background: #fff;
+	background: #4fd1c5;
 	z-index: 12; 
 	border-radius: 6px 6px 0 0;
 }
 
+.toogle-mode {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: .8rem;
+	padding-top: .8rem;
+}
 
+.btn-toggle-mode {
+	margin-right: .5rem;
+	padding: .3rem;
+	color: #fff;
+	box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+	background-color: #2d3748;
+}
+
+.btn-toggle-mode:hover {
+	cursor: pointer;
+
+}
 
 
 
